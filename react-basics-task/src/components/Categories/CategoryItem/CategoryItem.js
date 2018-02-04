@@ -15,7 +15,7 @@ import './CategoryItem.css'
 import {connect} from "react-redux";
 import {activateCategory} from "../../../core/categories";
 import {selectCategory} from "../../../state";
-import {getTodoList, isCategorySelected} from "../../../core";
+import {categoryDelete, getTodoList, isCategorySelected} from "../../../core";
 
 class CategoryItem extends React.Component {
 
@@ -38,6 +38,9 @@ class CategoryItem extends React.Component {
         const payload = {categoryId:this.props.categoryId};
           this.props.selectCategory(payload);
     }
+
+
+
 
 
 
@@ -66,7 +69,11 @@ class CategoryItem extends React.Component {
                                 </div>
                                 <div className="remove">
                                     <IconButton>
-                                        <ActionDeleteForever/>
+                                        <ActionDeleteForever onClick={(event) => {
+
+                                            this.props.categoryDelete(this.props.categoryId);
+                                            event.stopPropagation();
+                                        }}/>
                                     </IconButton>
                                 </div>
                                 <div className="add">
@@ -90,7 +97,8 @@ class CategoryItem extends React.Component {
 
 const mapDispatchToProps = ({
     activateCategory,
-    selectCategory
+    selectCategory,
+    categoryDelete
 });
 
 const mapStateToProps =(state,props)=> {

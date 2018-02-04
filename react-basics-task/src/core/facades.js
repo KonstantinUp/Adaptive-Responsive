@@ -36,7 +36,9 @@ export const getTodoList =(state,categoryId)=>{
 
 
 
+      if(!categoriesMap(state)[categoryId]){
 
+      }
     let todoList = getTasksbyCategoryId(state,categoryId);
 
     if(showDone) {
