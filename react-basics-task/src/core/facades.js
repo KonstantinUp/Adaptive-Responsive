@@ -2,7 +2,10 @@ import { getLocation } from "react-router-redux";
 import {isDoneShown, getTodosState} from "../state";
 import {searchKey} from "./constants";
 import {selectedCategory} from "../state/categories";
-import {categoriesList, categoriesMap, getCategoryTodoIds, getTasksMap} from "../state/common";
+import {
+    categoriesList, categoriesMap, getCategoryInitialIds, getCategoryTodoIds, getCommonState, getTasksMap,
+    subCategories
+} from "../state/common";
 
 
 
@@ -14,6 +17,19 @@ export const isCategorySelected =(state,idCategory) =>{
    return idCategory == selectedCategory(state);
 };
 
+export const isNotChildrenTreeEmpty = (state,idCategory,parentId)=>{
+
+   // let subCategoriesMap =  subCategories(state);
+    // debugger;
+    // if(parentId){
+    //     return  subCategories(state)[idCategory].categories.map((categoryId)=> subCategoriesMap[categoryId]);
+    // }else {
+    let a = categoriesMap;
+     console.log(idCategory);
+     // debugger;
+        return categoriesMap(state)[idCategory].categories.map((categoryId) => categoriesMap(state)[categoryId]);
+    // }
+};
 
 
 export const  getTasksbyCategoryId =(state,idCategory) =>{
@@ -167,10 +183,14 @@ export const getTodoList =(state,categoryId)=>{
 
  export function getCategoryList(state){
 
-    let categoryArr = categoriesList(state);
-
+    let categories =  categoriesMap(state);
+    // let b = state;
+    // let a = getCategoryInitialIds;
+    // debugger;
+   let categoryArr = getCategoryInitialIds(state).map((categoryInitialId)=> categories[categoryInitialId]);
+    // console.log(categoryArr);
     let categoryArrLength = categoryArr.length-1;
-
+// debugger;
     for (let i = 0; i < categoryArrLength; i++){
         for (let j = 0; j < categoryArrLength-i; j++) {
         if (categoryArr[j+1].id > categoryArr[j].id) {

@@ -22,15 +22,23 @@ export  default class CategoryInput extends React.Component {
 
     handleKeyPress(e) {
         if (e.key === 'Enter' && this.state.value) {
-            this.props.add(e.target.value,this.props.categoryId);
+            if(this.props.categoryId){
+                this.props.add(e.target.value,this.props.categoryId);
+            } else{
+                this.props.add(e.target.value,null);
+            }
+
             this.setState({value: ""});
         }
     }
 
     onClickHandler(){
         if (this.state.value){
-            this.props.add(this.state.value,this.props.categoryId);
-            this.setState({value: ""});
+            if(this.props.categoryId){
+                this.props.add(this.state.value,this.props.categoryId);
+            } else{
+                this.props.add(this.state.value,null);
+            }
         }
     }
 

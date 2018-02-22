@@ -13,6 +13,7 @@ export let newCategoryCreate = ()=> {
     return {
         id: null,
         title: 'New category',
-        tasks:[]
+        tasks:[],
+        categories:[]
     }
 };

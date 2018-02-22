@@ -25,7 +25,7 @@
     cursor: pointer;
     flex-grow: 1;
 }
-.paper .main .title .expand {
+.paper .main .expand {
     width: 48px;
 }
 
@@ -34,6 +34,10 @@
 }
 .category-itemactive  > .paper{
     background-color: #00bcd4!important;
+}
+.children.collapsed {
+    height: 0px;
+    overflow: hidden;
 }
 .children{
     padding-left: 60px;

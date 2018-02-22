@@ -17,6 +17,7 @@ import {categoriesList} from "../../../state/common";
         };
 
         this.handleChange = this.handleChange.bind(this);
+        this.createCategoryTree = this.createCategoryTree.bind(this);
     }
 
     handleChange(e){
@@ -25,13 +26,30 @@ import {categoriesList} from "../../../state/common";
         })
     }
 
+    createCategoryTree(serviceActions, categoryIds, parentId) {
+               // debugger;
+        console.log( categoryIds);
+          return categoryIds.map((category) => {
+              return (<CategoryItem key={category.id}
+                                    serviceActions={serviceActions}
+                                    categoryId ={category.id}
+                                    categoryTitle={category.title}
+                                    parentId={parentId}
+                  />);
+
+          });
+      }
 
     render(){
 
+        let serviceActions = {
+            createCategoryTree: this.createCategoryTree,
+        };
 
-        const categoryItems = this.props.categoriesList.map((category)=>{
-            return <CategoryItem  key ={category.id} categoryId ={category.id} categoryTitle={category.title}/>
-        });
+        const categoryItems = this.createCategoryTree(serviceActions,this.props.categoriesList,null);
+        //     this.props.categoriesList.map((category)=>{
+        //     return <CategoryItem  key ={category.id} categoryId ={category.id} categoryTitle={category.title}/>
+        // });
 
         return (
             <div className="categories">
