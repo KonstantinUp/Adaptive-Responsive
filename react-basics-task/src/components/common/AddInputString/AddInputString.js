@@ -40,6 +40,7 @@ export  default class CategoryInput extends React.Component {
                 this.props.add(this.state.value,null);
             }
         }
+        this.setState({value: ""});
     }
 
     render() {

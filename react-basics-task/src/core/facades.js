@@ -9,8 +9,20 @@ import {
 
 
 
+export const calculateDonePercentage =(state) =>{
+ // debugger;
+    const todosState = getTodosState(state);
 
+    let todosCount = Object.keys(getTasksMap(state)).length;
+    let doneTodoCount = 0;
 
+    Object.keys(todosState).forEach((item) => {
+        if (todosState[item].completed === true) {
+            doneTodoCount += 1;
+        }
+    });
+    return Math.round(100 * doneTodoCount / todosCount);
+};
 
 export const isCategorySelected =(state,idCategory) =>{
 
@@ -24,8 +36,8 @@ export const isNotChildrenTreeEmpty = (state,idCategory,parentId)=>{
     // if(parentId){
     //     return  subCategories(state)[idCategory].categories.map((categoryId)=> subCategoriesMap[categoryId]);
     // }else {
-    let a = categoriesMap;
-     console.log(idCategory);
+    // let a = categoriesMap;
+    //  console.log(idCategory);
      // debugger;
         return categoriesMap(state)[idCategory].categories.map((categoryId) => categoriesMap(state)[categoryId]);
     // }

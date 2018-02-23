@@ -2,11 +2,12 @@ import {push} from "react-router-redux";
 import {searchKey} from "./constants";
 import { getLocation } from "react-router-redux";
 import {newCategoryCreate, newTaskCreate} from "./utils";
-import {setTasks,setCategories,categoriesList,getTasksMap,categoriesMap} from "../state";
+import {setTasks, setCategories, categoriesList, getTasksMap, categoriesMap, getTodosState} from "../state";
 import {
     getCategoryInitialIds, getInitialCategoriesIds, setInitialCategories, setSubCategories,
     subCategories
 } from "../state/common";
+import {todosStateRefresh} from "../state/tasks";
 
 
 
@@ -25,28 +26,23 @@ export const findTask = (string)=> (dispatch, getState) => {
 
 
 export const categoryDelete = (categoryId,parentId)=> (dispatch,getState) => {
-
+    let todosState = Object.assign({}, getTodosState(getState()));
+    console.log(getTodosState(getState()));
     let copyCategoryMap = Object.assign({}, categoriesMap(getState()) );
     let copyTasksMap = Object.assign({},getTasksMap(getState()));
     let copyInitialCategoriesIds = Object.assign([], getCategoryInitialIds(getState()));
 
-    let tasksArr = copyCategoryMap[categoryId].tasks;
-    let CategoriesIds =  copyCategoryMap[categoryId].categories;
-
-    // let subCategoriesArr = copyCategoryMap[categoryId].categories;
-    // let copySubCategoriesMap = Object.assign({},subCategories(getState()));
-
-    // if(copyCategoryMap[categoryId].categories){
-    //
-    // }
 
         function req (categoryId) {
-            // debugger;
+            debugger;
             let tasksArr= copyCategoryMap[categoryId].tasks;
             tasksArr.forEach(function(item) {delete copyTasksMap[item];});
+            tasksArr.forEach(function(item) {
+                if( todosState[item]){
+                 delete todosState[item];
+                }
+            });
 
-            console.log(copyInitialCategoriesIds);
-            // debugger;
             copyInitialCategoriesIds.forEach(function (item,i) {
                 if(item == categoryId){
                     copyInitialCategoriesIds.splice(i, 1);
@@ -59,7 +55,6 @@ export const categoryDelete = (categoryId,parentId)=> (dispatch,getState) => {
                     }
                 });
             }
-
             if(copyCategoryMap[categoryId].categories == false){
                 delete copyCategoryMap[categoryId];
                 return ;
@@ -71,19 +66,8 @@ export const categoryDelete = (categoryId,parentId)=> (dispatch,getState) => {
                 })
 
             }
-
-
         }
          req(categoryId);
-
-
-
-
-    // subCategoriesArr.forEach(function(item) {
-    //     delete copySubCategoriesMap[item];
-    // });
-    // delete copyCategoryMap[categoryId];
-
 
     let currentPath = getLocation(getState()).pathname;
     let pathArr = currentPath.split('/');
@@ -92,10 +76,9 @@ export const categoryDelete = (categoryId,parentId)=> (dispatch,getState) => {
          dispatch(push('/'));
      }
 
+    dispatch(todosStateRefresh(todosState));
     dispatch(setInitialCategories(copyInitialCategoriesIds));
-
     dispatch(setTasks(copyTasksMap));
-
     dispatch(setCategories(copyCategoryMap));
 };
 

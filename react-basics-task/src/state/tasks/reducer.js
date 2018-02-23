@@ -13,7 +13,10 @@ const handlers = {
         [payload.todoId]: {
             completed: false,
         },
-    })
+    }),
+    [actions.todosStateRefresh]: (state, { payload }) => Object.assign({}, 
+        payload
+    )
 };
 
 const initialState = {};

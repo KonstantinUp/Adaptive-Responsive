@@ -36,9 +36,9 @@ export default  class  Search extends React.Component {
         return (
             <div className="materialComponentProgress">
                 <LinearProgress mode="determinate" color={"#37FF01"} style={{height: '15px', backgroundColor: 'white'}}
-                               />
+                                value={this.props.percentage}              />
             </div>
-            // value={this.state.donePercentage}
+
         )
 
     }

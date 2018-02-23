@@ -28,7 +28,7 @@ import {categoriesList} from "../../../state/common";
 
     createCategoryTree(serviceActions, categoryIds, parentId) {
                // debugger;
-        console.log( categoryIds);
+        // console.log( categoryIds);
           return categoryIds.map((category) => {
               return (<CategoryItem key={category.id}
                                     serviceActions={serviceActions}
