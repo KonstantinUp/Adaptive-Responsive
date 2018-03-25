@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'GothamPro';
-  src: url("../../css-recipes-and-layout/palermo-adaptive-responsive/fonts/GothamPro.otf");
+  src: url("../fonts/GothamPro.otf");
   font-weight: 700;
   font-style: normal; }
 @media screen and (min-width: 1px) {
@@ -29,7 +29,10 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    color: rgb(178,178,178); }
+    color: gray; }
+
+  .lg-pizza {
+    display: none; }
 
   .wrapper {
     width: 100%; }
@@ -41,14 +44,14 @@
     display: flex;
     justify-content: center;
     cursor: pointer;
-    color: rgb(178,178,178); }
+    color: gray; }
 
   .whatsapp {
     width: 60px;
     display: flex;
     justify-content: center;
     cursor: pointer;
-    color: rgb(178,178,178); }
+    color: gray; }
 
   .logo {
     font-size: 48px;
@@ -73,7 +76,7 @@
     left: 9px;
     top: 6px;
     font-size: 11px;
-    background: rgb(255,219,77);
+    background: yellow;
     border-radius: 94px;
     width: 17px;
     text-align: center;
@@ -611,6 +614,9 @@
     cursor: pointer; }
 
   .company-logo_4 {
+    display: none; }
+
+  .over-tape {
     display: none; } }
 @media screen and (max-width: 423px) {
   .label_ {
@@ -1057,9 +1063,6 @@
     color: gray;
     margin-top: 4px; }
 
-  .footer-pizza-description span {
-    padding-left: 10px; }
-
   .pizza_2 {
     min-height: 270px;
     max-width: 244px;
@@ -1072,7 +1075,7 @@
     border: 1px solid #d6d6d6; }
 
   .text-pizza-description span:first-child {
-    max-width: 170px;
+    max-width: 173px;
     word-wrap: normal;
     max-height: 60px;
     overflow: hidden; }
@@ -1097,7 +1100,73 @@
     padding-left: 0; }
 
   .footer-pizza-description {
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  .sm-pizza {
+    display: none; }
+
+  .tape {
+    display: none; }
+
+  .pizza_1 {
+    max-width: 100%;
+    min-height: 350px; }
+
+  .pizza_2 {
+    min-height: 350px;
+    max-width: 100%; }
+
+  .text-pizza-description span:last-child {
+    margin-left: auto; }
+
+  .text-pizza-description span {
+    padding-left: 0; }
+
+  .pizza-description {
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .flex-columns {
+    min-height: 370px;
+    display: flex; }
+
+  .row .padding {
+    margin-bottom: 0; }
+
+  .lg-pizza {
+    display: block; }
+
+  .pizza-image {
+    overflow: hidden; }
+
+  .pizza {
+    position: relative;
+    left: -161px;
+    width: 100%; }
+
+  .pizza-image_2 {
+    width: 100%;
+    margin-top: 45px; }
+
+  .pizza-image_3 {
+    width: 100%;
+    position: relative;
+    left: -80px;
+    margin-top: 10px; }
+
+  .pizza-image_3 img {
+    width: 153%; }
+
+  .pizza-image_2 img {
+    width: 97%; }
+
+  .pizza img {
+    width: 153%; }
+
+  .text-pizza-description span:first-child {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif; } }
 @media only screen and (min-width: 992px) {
   .pay-system {
     justify-content: flex-end; }
@@ -1105,17 +1174,57 @@
   .whatsapp_768 {
     font-size: 15px; }
 
+  .lg-pizza {
+    display: block; }
+
+  .sm-pizza {
+    display: none; }
+
+  .tape {
+    display: none; }
+
   .label_ {
     min-width: 300px; }
 
+  .pay-system-text {
+    min-width: 86px; }
+
   .add {
     justify-content: flex-end; }
+
+  .pizza {
+    width: 100%; }
+
+  .over-tape {
+    position: absolute;
+    left: -22px;
+    top: -7px;
+    z-index: 1;
+    display: block; }
+
+  .pizza-size {
+    min-width: 56px; }
 
   .banner-grid {
     grid-template-areas: "window_11 window_11 window_11 window_11 window_11" "window_1 window_2 window_2 window_2 window_2" "window_1 window_3 window_4 window_5 window_9" "window_1 window_6 window_6 window_6 window_10"; }
 
   .header {
     max-width: 1200px; }
+
+  .pizza-image {
+    overflow: hidden; }
+
+  .pizza {
+    position: relative;
+    left: -161px; }
+    .pizza img {
+      width: 153%; }
+
+  .pizza-image_2 {
+    width: 100%;
+    margin-top: 45px; }
+    .pizza-image_2 img {
+      width: 97%; }
 
   .banner {
     max-width: 1200px;
@@ -1220,10 +1329,12 @@
     margin-left: 15px; }
 
   .pizza_2 {
-    min-height: 350px; }
+    min-height: 350px;
+    max-width: 100%; }
 
   .pizza_1 {
-    min-height: 350px; }
+    min-height: 350px;
+    max-width: 100%; }
 
   .flex-columns {
     display: flex;
@@ -1242,7 +1353,7 @@
     margin-left: auto; }
 
   .text-pizza-description span:first-child {
-    max-width: 170px;
+    max-width: 173px;
     word-wrap: normal;
     max-height: 100px;
     overflow: hidden; }
@@ -1261,7 +1372,20 @@
     border: none; }
 
   .pizza-description {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  .footer-pizza-description span {
+    padding-left: 0; }
+
+  .pizza-image_3 {
+    width: 100%;
+    position: relative;
+    left: -80px;
+    margin-top: 10px; }
+    .pizza-image_3 img {
+      width: 153%; }
 
   .logo {
     margin-right: 70px; }
