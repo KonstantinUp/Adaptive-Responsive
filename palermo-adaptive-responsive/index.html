@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!--<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">-->
-    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
-    <!--<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
     <script src="https://use.fontawesome.com/1867cf79af.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -210,33 +207,35 @@
                   <div class="position"></div>
               </div>
           </nav>
-          <section class="information">
-              <div class="stock">
-                  <img class="pay-system-image" src="image/logo_3.png">
-                  <div class="stock-text">Бесплатная доставка при заказе на 1200 тенге. Город, Юго-Восток, Михайловка, Федоровка, Майкудук.</div>
-              </div>
-              <div class="categories">
-                  <div class="search-header search-header-categories">
-                      <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Поиск блюда" aria-describedby="basic-addon2">
-                          <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+          <div class="information-wrapper">
+              <section class="information">
+                  <div class="stock">
+                      <img class="pay-system-image" src="image/logo_3.png">
+                      <div class="stock-text">Бесплатная доставка при заказе на 1200 тенге. Город, Юго-Восток, Михайловка, Федоровка, Майкудук.</div>
+                  </div>
+                  <div class="categories">
+                      <div class="search-header search-header-categories">
+                          <div class="input-group">
+                              <input type="text" class="form-control" placeholder="Поиск блюда" aria-describedby="basic-addon2">
+                              <span class="input-group-addon" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                          </div>
+                      </div>
+                      <div class="btn-group width">
+                          <button class="btn btn-default btn-lg dropdown-toggle flex" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Выберите категорию
+                              <!--<span class="caret"></span>-->
+                              <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                          </button>
+                          <ul class="dropdown-menu width">
+                              <li><a href="#">Action</a></li>
+                              <li><a href="#">Another action</a></li>
+                              <li><a href="#">Something else here</a></li>
+                              <li role="separator" class="divider"></li>
+                          </ul>
                       </div>
                   </div>
-                  <div class="btn-group width">
-                      <button class="btn btn-default btn-lg dropdown-toggle flex" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                         Выберите категорию
-                          <!--<span class="caret"></span>-->
-                          <i class="fa fa-chevron-down" aria-hidden="true"></i>
-                      </button>
-                      <ul class="dropdown-menu width">
-                          <li><a href="#">Action</a></li>
-                          <li><a href="#">Another action</a></li>
-                          <li><a href="#">Something else here</a></li>
-                          <li role="separator" class="divider"></li>
-                      </ul>
-                  </div>
-              </div>
-          </section>
+              </section>
+          </div>
           <section class="food-header">
                 <div class="food-header_text">
                     <div class="search-header food-header-categories">

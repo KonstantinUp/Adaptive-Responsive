@@ -93,7 +93,9 @@
     background-image: url(../image/backgraund_2.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    min-width: 303px; }
+    min-width: 303px;
+    border: 1px solid #edebeb;
+    border-bottom: none; }
 
   .banner-grid {
     margin-right: 20px;
@@ -240,13 +242,13 @@
     padding-left: 0px !important; }
 
   .menu {
-    width: 115px;
+    width: 113px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     color: gray;
-    margin-left: 25px;
+    margin-left: 23.5px;
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300; }
@@ -257,7 +259,7 @@
       display: block; }
 
   .review {
-    width: 115px;
+    width: 113px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -266,7 +268,7 @@
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    height: 54px; }
+    height: auto; }
 
   .review:hover {
     color: black; }
@@ -274,7 +276,7 @@
       display: block; }
 
   .about {
-    width: 115px;
+    width: 113px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -283,7 +285,7 @@
     position: relative;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    height: 54px; }
+    height: auto; }
 
   .about:hover {
     color: black; }
@@ -294,7 +296,7 @@
     width: 100%;
     height: 5px;
     position: absolute;
-    top: 49px;
+    top: 48px;
     background: gold;
     display: none;
     left: 0px; }
@@ -303,7 +305,8 @@
     display: flex;
     height: 55px;
     font-size: 15px;
-    border-bottom: #c8c8c8 1px solid; }
+    border-bottom: #edebeb 1px solid;
+    border-top: #edebeb 1px solid; }
 
   .rating i {
     width: 20%;
@@ -381,11 +384,17 @@
     padding: 0;
     background: white;
     min-height: 0;
-    margin-bottom: 15px; }
+    margin-bottom: 13px; }
 
   .pizza {
-    margin-top: 10px;
+    margin-top: 15px;
     width: 152px; }
+
+  .pizza_2 .sm-pizza {
+    margin-top: 25px;
+    display: flex; }
+    .pizza_2 .sm-pizza img {
+      margin-left: auto; }
 
   .pizza-image {
     position: relative;
@@ -393,16 +402,16 @@
 
   .tape {
     position: absolute;
-    left: -16px;
+    left: -22px;
     top: -5px; }
 
   .text-pizza-description {
-    margin-top: 10px;
+    margin-top: 18px;
     font-size: 12px;
     font-weight: 300;
     font-family: 'Open Sans', sans-serif; }
     .text-pizza-description span:first-child {
-      margin-bottom: 10px;
+      margin-bottom: 7px;
       display: inline-block;
       font-size: 15px;
       font-weight: 700;
@@ -416,10 +425,14 @@
         margin-right: 5px;
         margin-bottom: 2px; }
 
+  .text {
+    margin-bottom: 4px; }
+
   .footer-pizza-description {
-    margin-top: 15px;
+    margin-top: -5px;
     display: flex;
-    margin-right: 26px; }
+    margin-right: 25px;
+    align-items: center; }
     .footer-pizza-description span {
       font-size: 19px;
       margin-right: auto;
@@ -434,7 +447,7 @@
       border: none;
       outline: 0;
       width: 110px;
-      height: 30px;
+      height: 35px;
       border-radius: 4px;
       color: white;
       font-size: 15px;
@@ -617,7 +630,14 @@
     display: none; }
 
   .over-tape {
-    display: none; } }
+    display: none; }
+
+  .padding {
+    border-bottom: 1px solid #eeeeee;
+    border-top: 1px solid #eeeeee; }
+
+  .information-wrapper {
+    border-bottom: 1px solid #f4f4f4; } }
 @media screen and (max-width: 423px) {
   .label_ {
     display: none; }
@@ -636,6 +656,9 @@
 
   .pizza-image {
     margin-right: 0px; }
+
+  .pizza_2 .sm-pizza img {
+    margin-left: 0; }
 
   .footer-pizza-description {
     margin-right: 9px; } }
@@ -673,6 +696,16 @@
   .add {
     justify-content: flex-start; }
 
+  .review {
+    margin-left: 0;
+    background: white;
+    height: 53px; }
+
+  .about {
+    margin-left: 0;
+    background: white;
+    height: 53px; }
+
   .label_ {
     min-width: 260px;
     height: 305px; }
@@ -689,7 +722,10 @@
     align-items: flex-end;
     width: 100%;
     justify-content: center;
-    background: white; }
+    background: white;
+    border: 1px solid #edebeb;
+    border-bottom: none;
+    min-height: 54px; }
 
   .kitchen {
     font-size: 14px; }
@@ -762,6 +798,7 @@
     font-family: 'GothamPro', sans-serif; }
 
   .food-delivery {
+    border: 1.5px solid #eeeded;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -967,7 +1004,7 @@
   .menu {
     margin-left: 0;
     background: white;
-    height: 54px; }
+    height: 53px; }
 
   .review, .about {
     background: white; }
@@ -1040,7 +1077,9 @@
     display: none; }
 
   .text-pizza-description {
-    display: flex; }
+    display: flex;
+    margin-bottom: 13px;
+    margin-top: 0; }
     .text-pizza-description span {
       padding-left: 7px; }
 
@@ -1072,7 +1111,7 @@
     margin: auto !important; }
 
   .padding {
-    border: 1px solid #d6d6d6; }
+    border: 1px solid #edebeb; }
 
   .text-pizza-description span:first-child {
     max-width: 173px;
@@ -1103,7 +1142,7 @@
     margin-right: 0; }
 
   .sm-pizza {
-    display: none; }
+    display: none !important; }
 
   .tape {
     display: none; }
@@ -1124,8 +1163,8 @@
 
   .pizza-description {
     margin-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding-left: 20px;
+    padding-right: 24px; }
 
   .flex-columns {
     min-height: 370px;
@@ -1155,18 +1194,12 @@
     left: -80px;
     margin-top: 10px; }
 
-  .pizza-image_3 img {
-    width: 153%; }
-
-  .pizza-image_2 img {
-    width: 97%; }
-
-  .pizza img {
-    width: 153%; }
-
   .text-pizza-description span:first-child {
     font-weight: 300;
-    font-family: 'Open Sans', sans-serif; } }
+    font-family: 'Open Sans', sans-serif; }
+
+  .banner {
+    border-bottom: 1px solid #edebeb; } }
 @media only screen and (min-width: 992px) {
   .pay-system {
     justify-content: flex-end; }
@@ -1180,11 +1213,17 @@
   .sm-pizza {
     display: none; }
 
+  .sidebar {
+    border: 1px solid #edebeb; }
+
   .tape {
     display: none; }
 
   .label_ {
     min-width: 300px; }
+
+  .information-wrapper {
+    display: none; }
 
   .pay-system-text {
     min-width: 86px; }
@@ -1217,18 +1256,15 @@
   .pizza {
     position: relative;
     left: -161px; }
-    .pizza img {
-      width: 153%; }
 
   .pizza-image_2 {
     width: 100%;
     margin-top: 45px; }
-    .pizza-image_2 img {
-      width: 97%; }
 
   .banner {
     max-width: 1200px;
-    margin: auto; }
+    margin: auto;
+    background-image: url(../image/backgraund_3.jpg); }
 
   .cost {
     min-width: 111px; }
@@ -1275,23 +1311,22 @@
   .sidebar {
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
-    padding-left: 30px;
     font-size: 15px;
     position: absolute;
     background: white;
     z-index: 1;
     left: -15px;
     min-width: 285px;
-    padding-right: 35px; }
+    padding-right: 35px;
+    padding-top: 35px;
+    padding-left: 25px; }
 
   .open {
     display: flex;
     flex-direction: column; }
 
   .margin {
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
     font-weight: bold;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif; }
@@ -1301,11 +1336,12 @@
       padding-right: 5px; }
     .margin div {
       margin-bottom: 8px;
-      padding-left: 8px;
+      padding-left: 15px;
       font-weight: 300;
       font-family: 'Open Sans', sans-serif; }
     .margin span {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+      margin-top: 15px;
       display: flex;
       align-items: center;
       font-family: 'Open Sans', sans-serif; }
@@ -1318,15 +1354,23 @@
   .category-color {
     color: #9bd43f; }
 
-  .border {
-    border-bottom: 1px solid gray; }
+  .sidebar .border {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 0; }
+  .sidebar .border + .border {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+    margin-top: 15px; }
 
   .margin div:last-child {
     color: #000000; }
 
   .row .padding {
-    width: 280px;
-    margin-left: 15px; }
+    margin-left: 15px;
+    flex-grow: 1;
+    max-width: 280px; }
 
   .pizza_2 {
     min-height: 350px;
@@ -1373,19 +1417,18 @@
 
   .pizza-description {
     margin-bottom: 0;
-    padding-left: 15px;
-    padding-right: 15px; }
+    padding-left: 20px;
+    padding-right: 24px; }
 
   .footer-pizza-description span {
-    padding-left: 0; }
+    padding-left: 0;
+    min-width: 70px; }
 
   .pizza-image_3 {
     width: 100%;
     position: relative;
     left: -80px;
     margin-top: 10px; }
-    .pizza-image_3 img {
-      width: 153%; }
 
   .logo {
     margin-right: 70px; }
