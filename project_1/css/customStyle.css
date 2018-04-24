@@ -1,0 +1,38 @@
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.form-header{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.textarea-header{
+    font: 20px/36px raleway-medium, sans-serif;
+    text-align: left;
+    display: block;
+}
+
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('fonts/raleway/Raleway-Medium.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway-medium';
+    src: url('fonts/raleway/Raleway-SemiBold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('fonts/raleway/Raleway-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
