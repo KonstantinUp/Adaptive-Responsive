@@ -103,6 +103,32 @@
     height: 30px;
     right: 0;
 }
+.carousel_height{
+}
+.carousel.slide{
+    margin-top: 81px;
+}
+.carousel-inner > .item >img{
+    width: 100%;
+
+    position: absolute;
+    top:0;
+    left:0;
+}
+.carousel-inner > .item{
+    padding-bottom: 600px;
+}
+@media screen and (min-aspect-ratio: 16/9) {
+    .carousel-inner > .item >img{
+        top:-50%;
+        height: 150% !important;
+    }
+}
+@media screen and (max-aspect-ratio: 16/14) {
+    .carousel-inner > .item >img{
+       height: 100% !important;
+    }
+}
 @font-face {
     font-family: 'raleway-regular';
     src: url('fonts/raleway/Raleway-Medium.ttf');
