@@ -56,6 +56,7 @@
 
 .margin{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 .margin_left{
     margin-left: auto !important;
@@ -64,7 +65,7 @@
     margin-top: 20px;
 }
 .backgraund{
-    background: #544A4A;
+    background: rgba(84,74,74,0.8);
 }
 .navbar a{
     text-transform: uppercase;
@@ -117,6 +118,54 @@
 }
 .carousel-inner > .item{
     padding-bottom: 600px;
+}
+.personal-margin{
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.logo img {
+    max-width: 250px;
+    max-height: 250px;
+}
+.services-title{
+    float: none !important;
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+}
+.text-style{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.item-wrap:hover{
+     color: white;
+}
+.effect{
+    filter: grayscale(100%);
+    transition: all 1.5s ease-in-out;
+}
+.item_1:hover , .item_2:hover, .item_3:hover{
+    filter: grayscale(0);
+}
+
+.max-width{
+    max-width: 200px;
 }
 @media screen and (min-aspect-ratio: 16/9) {
     .carousel-inner > .item >img{
