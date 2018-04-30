@@ -68,6 +68,11 @@
 }
 .backgraund{
     background: rgba(84,74,74,0.8);
+
+}
+.backgraund-img{
+    background: url(../images/myImage/image_5.jpg) no-repeat center/cover;
+    box-shadow: inset 0 450px 500px -100px #fff;
 }
 .navbar a{
     text-transform: uppercase;
@@ -274,13 +279,13 @@ html, body{
 }
 
 .btn-style{
-    height: 40px;
+    /*height: 40px;*/
     border-radius: 15px !important;
-    background-color: rgb(134, 192, 129) !important;
+    background-color: #f5f6f7 !important;
     width: 100%;
 }
 .btn-style:hover{
-    background-color: rgba(134, 192, 129,0.8) !important;
+    background-color: #edf2f7 !important;
 }
 .btn-wrapper{
     margin-top: 20px;
@@ -296,8 +301,9 @@ html, body{
     height: 45px;
     border-radius: 0.5em ;
 }
+
 .wrapper-btn{
-    margin-top: 20px;
+    /*margin-top: 20px;*/
 }
 
 .email-padding{
@@ -348,4 +354,36 @@ html, body{
 }
 #last{
     padding-bottom: 350px;
+}
+
+.input-style{
+    width: 100% !important;
+    padding: 24px !important;
+    margin-bottom: 24px;
+    background: #fff;
+    border-radius: 50px !important;
+    border: 1px solid transparent !important;
+    color: #000 !important;
+    font-size: 18px !important;
+    font-weight: 500;
+    text-align: center;
+}
+.form{
+    min-width: 290px;
+}
+
+.btn-style{
+    margin-bottom: 10px!important;
+    background: #f5f6f7;
+    padding: 12px 30px!important;
+    border-radius: 50px!important;
+    border: none!important;
+    letter-spacing: 1px;
+    font-size: 17px !important;
+    color: #383637 !important;
+    font-weight: 700 !important;
+    /* text-align: center; */
+    -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.19);
+    transition: all 300ms ease;
 }
