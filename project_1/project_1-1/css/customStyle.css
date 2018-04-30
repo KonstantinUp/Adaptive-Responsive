@@ -71,8 +71,9 @@
 
 }
 .backgraund-img{
-    background: url(../images/myImage/image_5.jpg) no-repeat center/cover;
-    box-shadow: inset 0 450px 500px -100px #fff;
+    background: url(../images/myImage/image_8.jpg) no-repeat center/cover;
+    box-shadow: inset 0 450px 500px -153px #D2D8D8;
+    background-position: 51% 118%;
 }
 .navbar a{
     text-transform: uppercase;
@@ -386,4 +387,123 @@ html, body{
     -webkit-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.19);
     transition: all 300ms ease;
+}
+
+
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    background-color:#222222;
+    /*padding: 25px 0px;*/
+}
+
+footer ul{
+    list-style:none;
+    margin:0 auto;
+    display:inline-block;
+    padding-top:50px;
+}
+
+footer ul li{
+    float:left;
+}
+
+footer ul li a{
+    color:#b1aca1;
+    padding:20px;
+}
+
+footer ul li a:hover{
+    color:#7dabdb;
+    text-decoration:none;
+}
+
+.footer-top{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.footer-top .fa{
+    font-size:18px;
+    color: #FFF;
+    padding-right:10px;
+}
+
+.footer-top a{
+    color:#FFF;
+    text-decoration:none;
+}
+
+.footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{
+    color:#7dabdb;
+}
+
+.copyright{
+    background-color:#f0f0f0;
+}
+
+.copyright p{
+    font-size:12px;
+    padding:15px 0 10px 0;
+}
+footer{
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+.menu{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.footer-top{
+    background-color: #222;
+}
+.footer-link{
+    background-color: #222;
+}
+.copyright{
+    background-color: #222;
+    color: #b1aca1;
+}
+*:active {
+    outline: none;
+}
+.padding-form{
+    padding-top: 200px;
+    padding-bottom: 350px ;
+}
+
+.footer-top > .container a:hover{
+    color: #b1aca1 !important;
+
+}
+.footer-top > .container a:hover > i{
+    color: #b1aca1 !important;
+
+}
+.footer-link >.row a:hover{
+    color: #a3b1af !important;
+}
+.text-center:hover a{
+    color:#b1aca1 !important;
+}
+.text-center:hover a > i {
+    color:#b1aca1 !important;
+}
+.message-text{
+    float: none !important;
+    margin: auto !important;
+    text-align: center !important;
+    font-size: 14px;
+    color: #3c3c3c;
+    padding: 20px;
+}
+
+.message-text_title{
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 42px;
 }

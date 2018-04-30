@@ -18,7 +18,7 @@
 	<!-- CSS
     ================================================== -->
     <!--<link rel="stylesheet" href="css/default.css">-->
-	<link rel="stylesheet" href="css/layout.css">
+	<!--<link rel="stylesheet" href="css/layout.css">-->
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/customStyle.css">
    <!-- Script
@@ -33,12 +33,18 @@
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+
+
 </head>
 
 <body>
     <canvas id="nokey" class="canvas">
 
     </canvas>
+
+    <div class="preloader">
+        <div class="loader"> </div>
+    </div>
    <!-- Header
    ================================================== -->
    <!--<header>-->
@@ -479,8 +485,8 @@
         </div>
     </div>
 
-    <div class="container-fluid margin">
-        <div class="row">
+    <div class="container-fluid margin backgraund">
+        <div class="row" i>
             <div class="col-md-8 col-md-offset-2 form-wrapper">
                 <form>
                     <div class="form-group">
@@ -506,23 +512,58 @@
         </div>
     </div>
 
-
-
-    <div class="container-fluid">
-        <div class ="row">
-            <div class="col-md-12">
-                самые интересные новости в сети
+    <div class="col-sm-5 form-box wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+        <div class="form-top">
+            <div class="form-top-left">
+                <h3>Sign up now</h3>
+                <p>Fill in the form below to get instant access:</p>
+            </div>
+            <div class="form-top-right">
+                <span aria-hidden="true" class="typcn typcn-pencil"></span>
             </div>
         </div>
-         <div class="row">
-             <div class="col-md-2">
-                 <div>Jan 31, 2014</div>
-                 <span class="dauthor">By Sakura Haruno</span>
-             </div>
-             <div>
-
-         </div>
+        <div class="form-bottom">
+            <form role="form" action="" method="post">
+                <div class="form-group">
+                    <label class="sr-only" for="form-first-name">First name</label>
+                    <input type="text" name="form-first-name" placeholder="First name..." class="form-first-name form-control" id="form-first-name">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-last-name">Last name</label>
+                    <input type="text" name="form-last-name" placeholder="Last name..." class="form-last-name form-control" id="form-last-name">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-email">Email</label>
+                    <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                </div>
+                <div class="form-group">
+                    <label class="sr-only" for="form-about-yourself">About yourself</label>
+                    <textarea name="form-about-yourself" placeholder="About yourself..." class="form-about-yourself form-control" id="form-about-yourself"></textarea>
+                </div>
+                <button type="submit" class="btn">Sign me up!</button>
+                <div class="form-links">
+                    <a href="#" class="launch-modal" data-modal-id="modal-privacy">Privacy Policy</a> -
+                    <a href="#" class="launch-modal" data-modal-id="modal-faq">FAQ</a>
+                </div>
+            </form>
+        </div>
     </div>
+
+    <!--<div class="container-fluid">-->
+        <!--<div class ="row">-->
+            <!--<div class="col-md-12">-->
+                <!--самые интересные новости в сети-->
+            <!--</div>-->
+        <!--</div>-->
+         <!--<div class="row">-->
+             <!--<div class="col-md-2">-->
+                 <!--<div>Jan 31, 2014</div>-->
+                 <!--<span class="dauthor">By Sakura Haruno</span>-->
+             <!--</div>-->
+             <!--<div>-->
+
+         <!--</div>-->
+    <!--</div>-->
 
    <!-- Journal Section
    ================================================== -->
@@ -665,54 +706,124 @@
                <!--<b><a href="#">3 Days Ago</a></b>-->
             <!--</li>-->
             <!--&ndash;&gt;-->
-         </ul>
+         <!--</ul>-->
 
-         <p class="align-center"><a href="#" class="button">Follow us</a></p>
+         <!--<p class="align-center"><a href="#" class="button">Follow us</a></p>-->
 
-      </div>
+      <!--</div>-->
 
-   </section> <!-- Tweet Section End-->
+   <!--</section> &lt;!&ndash; Tweet Section End&ndash;&gt;-->
 
 
 
    <!-- footer
    ================================================== -->
-   <footer>
 
-      <div class="row">
+    <footer>
 
-         <div class="twelve columns">
+        <div class="footer-top">
+            <div class="container">
+                <div class="col-lg-2 col-xs-12 text-center">
+                    <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
+                </div>
+                <div class="col-lg-2 col-xs-12 text-center">
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i>Twitter</a>
+                </div>
+                <div class="col-lg-2 col-xs-12 text-center">
+                    <a href="#"><i class="fa fa-flickr fa-2x"></i>Flickr</a>
+                </div>
+                <div class="col-lg-2 col-xs-12 text-center">
+                    <a href="#"><i class="fa fa-tumblr fa-2x"></i>Tumblr</a>
+                </div>
+                <div class="col-lg-2 col-xs-12 text-center">
+                    <a href="#"><i class="fa fa-github fa-2x"></i>Github</a>
+                </div>
+                <div class="col-lg-2 col-xs-12 text-center">
+                    <a href="#"><i class="fa fa-google-plus fa-2x"></i>Google</a>
+                </div>
+            </div>
+        </div>
 
-            <ul class="footer-nav">
-					<li><a href="#">Home.</a></li>
-              	<li><a href="#">Blog.</a></li>
-              	<li><a href="#">Portfolio.</a></li>
-              	<li><a href="#">About.</a></li>
-              	<li><a href="#">Contact.</a></li>
-               <li><a href="#">Features.</a></li>
-			   </ul>
+        <div class="container" style="border-top:1px solid grey;">
+            <div class="row text-center">
+                <div class="col-lg-6 col-lg-offset-3">
+                    <ul class="menu">
 
-            <ul class="footer-social">
-               <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-               <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-               <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="#"><i class="fa fa-skype"></i></a></li>
-               <li><a href="#"><i class="fa fa-rss"></i></a></li>
-            </ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
 
-            <ul class="copyright">
-               <li>Copyright &copy; 2014 Sparrow</li> 
-               <li>Design by <a href="http://www.styleshout.com/">Styleshout</a></li>               
-            </ul>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
 
-         </div>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
 
-         <div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
 
-      </div>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
 
-   </footer> <!-- Footer End-->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="copyright">
+        <div class="container">
+
+            <div class="row text-center">
+                <p>Copyright © 2017 All rights reserved</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--<footer>-->
+
+      <!--<div class="row">-->
+
+         <!--<div class="twelve columns">-->
+
+            <!--<ul class="footer-nav">-->
+					<!--<li><a href="#">Home.</a></li>-->
+              	<!--<li><a href="#">Blog.</a></li>-->
+              	<!--<li><a href="#">Portfolio.</a></li>-->
+              	<!--<li><a href="#">About.</a></li>-->
+              	<!--<li><a href="#">Contact.</a></li>-->
+               <!--<li><a href="#">Features.</a></li>-->
+			   <!--</ul>-->
+
+            <!--<ul class="footer-social">-->
+               <!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-linkedin"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-skype"></i></a></li>-->
+               <!--<li><a href="#"><i class="fa fa-rss"></i></a></li>-->
+            <!--</ul>-->
+
+            <!--<ul class="copyright">-->
+               <!--<li>Copyright &copy; 2014 Sparrow</li> -->
+               <!--<li>Design by <a href="http://www.styleshout.com/">Styleshout</a></li>               -->
+            <!--</ul>-->
+
+         <!--</div>-->
+
+         <!--<div id="go-top" style="display: block;"><a title="Back to Top" href="#">Go To Top</a></div>-->
+
+      <!--</div>-->
+
+   <!--</footer> &lt;!&ndash; Footer End&ndash;&gt;-->
 
    <!-- Java Script
    ================================================== -->
