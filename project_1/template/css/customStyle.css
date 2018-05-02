@@ -1,0 +1,54 @@
+.services-content{
+    text-align: center;
+}
+.services-content{
+    padding: 0;
+}
+.row-height{
+    height: 270px;
+}
+.style_item-1{
+    border: 1px solid black;
+    height: 100%;
+    cursor: pointer;
+    background: url("../images/myImage/image_1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.style_item-2 {
+    border: 1px solid black;
+    height: 100%;
+    cursor: pointer;
+    background: url("../images/myImage/image_2-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.style_item-3 {
+    border: 1px solid black;
+    height: 100%;
+    cursor: pointer;
+    background: url("../images/myImage/image_3-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.style_item-4{
+    border: 1px solid black;
+    height: 100%;
+    cursor: pointer;
+    background: url("../images/myImage/image_4-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.services-item-1,.services-item-2,.services-item-3,.services-item-4{
+    opacity:0;
+    transition: opacity 1s ease-in-out;
+}
+
+.style_item:hover{
+
+}
