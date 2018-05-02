@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c51ce95-5a24-4b5d-b558-f2652c65e548" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_1/project_1-1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/project_1/project_1-1/index.html" afterDir="false" />
-    </list>
+    <list default="true" id="2c51ce95-5a24-4b5d-b558-f2652c65e548" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -36,11 +31,11 @@
           <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_1/project_1-1/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="787" column="12" selection-start-line="787" selection-start-column="12" selection-end-line="787" selection-end-column="12" />
+            <state relative-caret-position="285">
+              <caret line="793" column="51" lean-forward="true" selection-start-line="793" selection-start-column="51" selection-end-line="793" selection-end-column="51" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -51,10 +46,15 @@
       <file leaf-file-name="customStyle.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="500" column="18" selection-start-line="500" selection-start-column="18" selection-end-line="500" selection-end-column="18" />
+            <state relative-caret-position="561">
+              <caret line="506" column="24" lean-forward="true" selection-start-line="506" selection-start-column="24" selection-end-line="506" selection-end-column="24" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="image_8.jpg" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/project_1/project_1-1/images/myImage/image_8.jpg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file leaf-file-name="logic.js" pinned="false" current-in-tab="false">
@@ -113,8 +113,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/project_1/index.html" />
-        <option value="$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css" />
         <option value="$PROJECT_DIR$/project_1/project_1-1/index.html" />
+        <option value="$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css" />
       </list>
     </option>
   </component>
@@ -240,16 +240,15 @@
       <workItem from="1524830532995" duration="752000" />
       <workItem from="1524886655438" duration="950000" />
       <workItem from="1524896258732" duration="9733000" />
-      <workItem from="1525077719829" duration="10485000" />
+      <workItem from="1525077719829" duration="10917000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23943000" />
+    <option name="totallyTimeSpent" value="24375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21970496" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -424,22 +423,25 @@
     <entry file="file://$PROJECT_DIR$/project_1/project_1-1/favicon.ico">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="500" column="18" selection-start-line="500" selection-start-column="18" selection-end-line="500" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/project_1/project_1-1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="787" column="12" selection-start-line="787" selection-start-column="12" selection-end-line="787" selection-end-column="12" />
+        <state relative-caret-position="285">
+          <caret line="793" column="51" lean-forward="true" selection-start-line="793" selection-start-column="51" selection-end-line="793" selection-end-column="51" />
           <folding>
             <element signature="n#style#0;n#div#1;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_1/project_1-1/css/customStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="506" column="24" lean-forward="true" selection-start-line="506" selection-start-column="24" selection-end-line="506" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/project_1/project_1-1/images/myImage/image_8.jpg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
   </component>
 </project>
