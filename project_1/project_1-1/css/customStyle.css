@@ -23,7 +23,8 @@
     min-width: 100%;
 }
 .portfolio-item .item-wrap img {
-   width: 330px;
+   /*width: 330px;*/
+    width: 100%;
 }
 .portfolio-item .item-wrap img {
   display: flex;
@@ -115,17 +116,19 @@
 .carousel_height{
 }
 .carousel.slide{
-    margin-top: 81px;
+    z-index: 999;
 }
 .carousel-inner > .item >img{
     width: 100%;
-
+    height: 100% !important;
     position: absolute;
     top:0;
     left:0;
 }
 .carousel-inner > .item{
-    padding-bottom: 600px;
+    /*padding-bottom: 600px;*/
+    height: 100vh;
+    max-height: 100vh;
 }
 .personal-margin{
     margin-top: 25px;
@@ -206,10 +209,14 @@
     font-style: normal;
 }
 
-
+@font-face {
+    font-family: 'Citrica';
+    src: url('fonts/myFonts/Uni Sans Thin.otf');
+    font-weight: normal;
+    font-style: normal;
+}
 .canvas{
     position: fixed;
-
 }
 html, body{
     height: 100%;
@@ -318,7 +325,7 @@ html, body{
     width: 100%;
     height: 100%;
     background: black;
-    z-index: 999;
+    z-index: 1001;
     transition: 2s all;
     opacity: 1;
     visibility: visible;
@@ -416,10 +423,10 @@ footer ul li a{
     padding:20px;
 }
 
-footer ul li a:hover{
-    color:#7dabdb;
-    text-decoration:none;
-}
+/*footer ul li a:hover{*/
+    /*color:#7dabdb;*/
+    /*text-decoration:none;*/
+/*}*/
 
 .footer-top{
     padding-bottom: 25px;
@@ -433,13 +440,13 @@ footer ul li a:hover{
 }
 
 .footer-top a{
-    color:#FFF;
+    color:#FFF !important;
     text-decoration:none;
 }
 
-.footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{
-    color:#7dabdb;
-}
+/*.footer-top .col-lg-2:hover .fa , .footer-top .col-lg-2:hover a{*/
+    /*color:#7dabdb;*/
+/*}*/
 
 .copyright{
     background-color:#f0f0f0;
@@ -477,21 +484,19 @@ footer{
 
 .footer-top > .container a:hover{
     color: #b1aca1 !important;
-
+    transition: all 0.2s ease-in-out;
 }
 .footer-top > .container a:hover > i{
     color: #b1aca1 !important;
+    transition: all 0.2s ease-in-out;
+}
 
-}
-.footer-link >.row a:hover{
-    color: #a3b1af !important;
-}
-.text-center:hover a{
-    color:#b1aca1 !important;
-}
-.text-center:hover a > i {
-    color:#b1aca1 !important;
-}
+/*.text-center:hover a{*/
+    /*color:#b1aca1 !important;*/
+/*}*/
+/*.text-center:hover a > i {*/
+    /*color:#b1aca1 !important;*/
+/*}*/
 .message-text{
     float: none !important;
     margin: auto !important;
@@ -506,4 +511,94 @@ footer{
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 42px;
+}
+ .footer-link .menu a{
+     color: #9d9d9d;
+     transition: all 0.5s ease-in-out;
+}
+.footer-link >.row a:hover{
+    color: #a3b1af !important;
+}
+
+.wrapper-btn> button{
+    outline: none !important;
+}
+#img_1{
+    left:50%;
+    position: absolute;
+    top: -200px;
+    transform: translate(-50%);
+    transition: opacity 1s linear ;
+    opacity: 0;
+    z-index: 999;
+}
+#img_2{
+    left:50%;
+    position: absolute;
+    top: -200px;
+    transform: translate(-50%);
+    transition: opacity 1s linear ;
+    opacity: 0;
+    z-index: 999;
+}
+#img_3{
+    left:50%;
+    position: absolute;
+    transform: translate(-50%);
+    top: -200px;
+    transition: opacity 1s linear ;
+    opacity: 0;
+    z-index: 999;
+}
+.personal-margin > #img{
+    margin-top: 25px;
+}
+.thumbnail{
+    text-align: center;
+    background-color: #D2D8D8 !important;
+    border: none !important;
+}
+.caption{
+    padding-top: 255px !important;
+}
+
+.caption > h3 {
+    font-size: 17px;
+    color: #000;
+}
+.caption > p{
+    font-size: 15px !important;
+}
+.section_title{
+    text-transform: uppercase;
+    color: #494949;
+    font-size: 60px;
+    text-align: center;
+}
+.color_text{
+    color: white;
+    /*font-family: 'Citrica',Sans-Serif;*/
+}
+.article-margin{
+    margin-top: 45px;
+}
+/*.personal-background{*/
+    /*background: url(../images/myImage/image_9.jpg) no-repeat center/cover;*/
+/*}*/
+/*.padding{*/
+    /*padding-left: 0 !important;*/
+    /*padding-right: 0 !important;*/
+/*}*/
+
+#text-caption_1{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#text-caption_2{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+#text-caption_3{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }

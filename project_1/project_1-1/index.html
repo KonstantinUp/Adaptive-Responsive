@@ -43,9 +43,9 @@
     <canvas id="nokey" class="canvas">
 
     </canvas>
-    <div id ="page-preloader" class="preloader">
-        <div class="loader"> </div>
-    </div>
+    <!--<div id ="page-preloader" class="preloader">-->
+        <!--<div class="loader"> </div>-->
+    <!--</div>-->
    <!-- Header
    ================================================== -->
    <!--<header>-->
@@ -198,60 +198,64 @@
             </a>
         </div>
 
-     <div class="container personal-margin">
-         <div class="row logo">
-                 <img src="images/myImage/LOGO.jpg">
-         </div>
-         <div class="row">
-             <div class="col-sm-6 col-md-4">
-                 <div class="thumbnail">
-                     <img src="images/myImage/personal/image_5.jpg"  class="img-circle" alt="...">
-                     <div class="caption">
-                         <h3>Thumbnail label</h3>
-                         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-sm-6 col-md-4">
-                 <div class="thumbnail">
-                     <img src="images/myImage/personal/image_5.jpg" class="img-circle" alt="...">
-                     <div class="caption">
-                         <h3>Thumbnail label</h3>
-                         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-sm-6 col-md-4">
-                 <div class="thumbnail">
-                     <img src="images/myImage/personal/image_5.jpg" class="img-circle" alt="...">
-                     <div class="caption">
-                         <h3>Thumbnail label</h3>
-                         <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,</p>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <!--<div class="row">-->
-             <!--<div class="col-md-4 col-md-offset-4">-->
+    <div class="container-fluid personal-background">
+        <div class="container personal-margin">
+            <div class="row logo">
+                <img src="images/myImage/LOGO.jpg">
+            </div>
+            <p class="section_title">наша команда</p>
+            <div class="row" id="img">
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/myImage/personal/image_5.jpg"  class="img-circle" id="img_1" alt="...">
+                        <div class="caption" id="text-caption_1">
+                            <h3>Екатерина Рулинская</h3>
+                            <p>архитектор</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/myImage/personal/image_5.jpg" class="img-circle" id="img_2"  alt="...">
+                        <div class="caption" id="text-caption_2">
+                            <h3>Дарья Семёнова</h3>
+                            <p> маркетолог </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail">
+                        <img src="images/myImage/personal/image_5.jpg" class="img-circle" id="img_3"  alt="...">
+                        <div class="caption" id="text-caption_3">
+                            <h3>Анна Ляховская</h3>
+                            <p> дизайнер </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">-->
+            <!--<div class="col-md-4 col-md-offset-4">-->
 
-             <!--</div>-->
-         <!--</div>-->
-         <!--<div class="row">-->
-             <!--<div class="col-md-4">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+            <!--<div class="col-md-4">-->
 
-             <!--</div>-->
-             <!--<div class="col-md-4">-->
-                 <!--<div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+            <!--<div>-->
 
-                 <!--</div>-->
-             <!--</div>-->
-             <!--<div class="col-md-4">-->
-                 <!--<div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--<div class="col-md-4">-->
+            <!--<div>-->
 
-                 <!--</div>-->
-             <!--</div>-->
-         <!--</div>-->
-     </div>
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+        </div>
+    </div>
+
 
    <!-- Works Section
    ================================================== -->
@@ -328,12 +332,8 @@
    <!--</section> &lt;!&ndash; Works Section End&ndash;&gt;-->
 
     <div class="container-fluid backgraund">
-        <div class="container margin">
-            <div class="row">
-                <div class="col-md-4 services-title">
-                    наши услуги
-                </div>
-            </div>
+        <div class="  margin " id="flag_text">
+                <p class="section_title color_text">наши услуги</p>
 
             <div class="row margin">
                 <!--<div class="col-xs-12 col-md-12">-->
@@ -426,7 +426,7 @@
                 <!--</div>-->
                 <!--</div>-->
 
-                <div class="col-xs-3 col-md-3">
+                <div class="col-xs-3 col-md-3 padding">
                     <div class="portfolio-item ">
                         <div class="item-wrap">
                             <a href="portfolio.html" class="item_1  effect">
@@ -434,13 +434,13 @@
                                 <!--<div class="overlay"></div>-->
                                 <!--<div class="link-icon"><i class="fa fa-link"></i></div>-->
                             </a>
-                            <div class="text-style">
+                            <div class="text-style ">
                                 <div>Градостроительство</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3 col-md-3">
+                <div class="col-xs-3 col-md-3 padding">
                     <div class="portfolio-item item_2 ">
                         <div class="item-wrap">
                             <a href="portfolio.html" class=" item_2 effect">
@@ -454,7 +454,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3 col-md-3">
+                <div class="col-xs-3 col-md-3 padding">
                     <div class="portfolio-item ">
                         <div class="item-wrap">
                             <a href="portfolio.html" class="item_3 effect">
@@ -468,7 +468,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-3 col-md-3">
+                <div class="col-xs-3 col-md-3 padding">
                     <div class="portfolio-item item_4 ">
                         <div class="item-wrap">
                             <a href="portfolio.html" class=" item_4 effect">
@@ -485,12 +485,13 @@
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class ="row header-padding">
-            <div class="col-md-8 header-text">
-                <h2>самые интересные новости в сети</h2>
-            </div>
-        </div>
+    <div class="container article-margin">
+        <!--<div class ="row header-padding">-->
+            <!--<div class="col-md-8 header-text">-->
+                <!--<h2>самые интересные новости в сети</h2>-->
+            <!--</div>-->
+        <!--</div>-->
+        <p class="section_title">интересные новости в сети</p>
         <div class="blog-entries">
             <div class="row border topic_1">
                 <div class="col-md-12">
@@ -819,7 +820,7 @@
 
         <div class="footer-top">
             <div class="container">
-                <div class="col-lg-2 col-xs-12 text-center">
+                <div class="col-lg-2 col-xs-12 text-center ">
                     <a href="#"><i class="fa fa-facebook fa-2x"></i>Facebook</a>
                 </div>
                 <div class="col-lg-2 col-xs-12 text-center">
@@ -902,22 +903,53 @@
 
     <script type="text/javascript">
         $(function() {
-             if(($(window).scrollTop()+$(window).height()) >=$(document).height()){
-                 $('#go').animate({'top':'0px'},3000);
-             } else {
-                 $('#go').stop(true).animate({'top':'200px'},10);
-             }
-            $(window).scroll(function(){
 
-                let distanceTop = $('#last').offset().top - $(window).height();
 
-                if  ($(window).scrollTop() > distanceTop  )
+            var flag = true;
 
-                    $('#go').animate({'top':'0px'},000);
+                $(window).scroll(function(){
+                    var distanceTop = $('#last').offset().top - $(window).height();
+                    var distanceTopImg = $('#img').offset().top - $(window).height();
+                    var distanceTopCaption = $('#flag_text').offset().top - $(window).height();
 
-                else
-                    $('#go').stop(true).animate({'top':'200px'},10);
-            })
+                    if(($(window).scrollTop()+$(window).height()) >=$(document).height()){
+                        $('#go').animate({'top':'0px'},0);} else {
+
+                        if  ($(window).scrollTop() > distanceTop  )
+
+                            $('#go').animate({'top':'0px'},1000);
+
+                        else
+                            $('#go').stop(true).animate({'top':'200px'},500);
+
+                    }
+
+                       if($(window).scrollTop() > distanceTopImg){
+                           $('#img_1').animate({'top':'30px'},1000).css("opacity", "1");
+                           $('#img_2').animate({'top':'30px'},1000).css("opacity", "1");
+                           $('#img_3').animate({'top':'30px'},1000).css("opacity", "1");
+                       }
+                       if($(window).scrollTop() > distanceTopCaption){
+                           $('#text-caption_1').css("opacity", "1");
+                           $('#text-caption_2').css("opacity", "1");
+                           $('#text-caption_3').css("opacity", "1");
+                       }
+
+                       if($(window).scrollTop() > 0 && $(window).scrollTop() < 20 && flag === true ){
+                               flag = false;
+
+                           $('html, body').animate({
+                               scrollTop: $('.personal-margin').offset().top-85
+                           }, 2000);
+
+                       } else {
+                           flag = false;
+                       }
+
+
+
+                })
+
         });
     </script>
 </body>
