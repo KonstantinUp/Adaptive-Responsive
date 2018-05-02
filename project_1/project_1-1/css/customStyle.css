@@ -164,16 +164,16 @@
     padding-top: 25px;
     padding-bottom: 25px;
 }
-.item-wrap:hover{
-     color: white;
-}
+/*.item-wrap:hover{*/
+     /*color: white;*/
+/*}*/
 .effect{
     filter: grayscale(100%);
     transition: all 1.5s ease-in-out;
 }
-.item_1:hover , .item_2:hover, .item_3:hover{
-    filter: grayscale(0);
-}
+/*.item_1:hover , .item_2:hover, .item_3:hover{*/
+    /*filter: grayscale(0);*/
+/*}*/
 
 .max-width{
     max-width: 200px;
@@ -649,13 +649,10 @@ body{
 
 
 
-
-
-
-.portfolio-item {
+.item_1 {
     position: relative;
 }
-.portfolio-item ::before,.portfolio-item :after{
+.item_1:before,.item_1:after{
     box-sizing: inherit;
     content: '';
     position: absolute;
@@ -663,28 +660,191 @@ body{
     width: 0;
     height: 0;
 }
-.portfolio-item ::before{
+.item_1:before{
     top: 0;
     left: 0;
+    z-index: 999;
 }
-.portfolio-item ::after {
+.item_1:after {
     bottom: 0;
     right: 0;
 }
-.portfolio-item :hover::before, .portfolio-item :hover::after {
+.item_1:hover:after {
+    width: 100%;
+    height: 100%;
+}
+.item_1:hover:before{
     width: 100%;
     height: 100%;
 }
 
-.portfolio-item :hover::before {
+.item_1:hover{
+    color: white;
+
+}
+.item_1:hover >.effect{
+    filter: grayscale(0);
+}
+.item_1:hover:before {
     border-top-color: white;
     border-right-color: white;
     transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
     cursor: pointer;
 }
-.portfolio-item :hover::after {
+.item_1:hover:after {
     border-bottom-color: white;
     border-left-color: white;
     cursor: pointer;
-    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+    transition: width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.item_2 {
+    position: relative;
+}
+.item_2:before,.item_2:after{
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    width: 0;
+    height: 0;
+}
+.item_2:before{
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.item_2:after {
+    bottom: 0;
+    right: 0;
+}
+.item_2:hover:after {
+    width: 100%;
+    height: 100%;
+}
+.item_2:hover:before{
+    width: 100%;
+    height: 100%;
+}
+
+.item_2:hover{
+    color: white;
+
+}
+.item_2:hover >.effect{
+    filter: grayscale(0);
+}
+.item_2:hover:before {
+    border-top-color: white;
+    border-right-color: white;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    cursor: pointer;
+}
+.item_2:hover:after {
+    border-bottom-color: white;
+    border-left-color: white;
+    cursor: pointer;
+    transition: width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.item_3 {
+    position: relative;
+}
+.item_3:before,.item_3:after{
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    width: 0;
+    height: 0;
+}
+.item_3:before{
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.item_3:after {
+    bottom: 0;
+    right: 0;
+}
+.item_3:hover:after {
+    width: 100%;
+    height: 100%;
+}
+.item_3:hover:before{
+    width: 100%;
+    height: 100%;
+}
+
+.item_3:hover{
+    color: white;
+
+}
+.item_3:hover >.effect{
+    filter: grayscale(0);
+}
+.item_3:hover:before {
+    border-top-color: white;
+    border-right-color: white;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    cursor: pointer;
+}
+.item_3:hover:after {
+    border-bottom-color: white;
+    border-left-color: white;
+    cursor: pointer;
+    transition: width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+
+.item_4 {
+    position: relative;
+}
+.item_4:before,.item_4:after{
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    border: 3px solid transparent;
+    width: 0;
+    height: 0;
+}
+.item_4:before{
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.item_4:after {
+    bottom: 0;
+    right: 0;
+}
+.item_4:hover:after {
+    width: 100%;
+    height: 100%;
+}
+.item_4:hover:before{
+    width: 100%;
+    height: 100%;
+}
+
+.item_4:hover{
+    color: white;
+
+}
+.item_4:hover >.effect{
+    filter: grayscale(0);
+}
+.item_4:hover:before {
+    border-top-color: white;
+    border-right-color: white;
+    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+    cursor: pointer;
+}
+.item_4:hover:after {
+    border-bottom-color: white;
+    border-left-color: white;
+    cursor: pointer;
+    transition: width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+.backgraund-img_1{
+    background: url(../images/myImage/image_.jpg) no-repeat center/cover;
+
 }
