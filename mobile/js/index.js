@@ -12,7 +12,7 @@ $(document).ready(function() {
                     vertical:true,
                     verticalSwiping:true,
                     arrows:false
-
+                    // infinite: false
                     // centerMode: true,
                     //                     //
                     // centerPadding:'258px'
@@ -50,6 +50,7 @@ $(document).ready(function() {
     var number;
     var arr=[];
 
+    var initialPadding = $('.slick-list').css('padding-top');
 
 
     $('.center').on('beforeChange', function(event, slick, currentSlide, nextSlide){
@@ -92,11 +93,19 @@ $(document).ready(function() {
         //
         // $('.slick-list.draggable').animate({ scrollTop: scroll },1000);
 
+            if(currentSlide === 0 && arr.length >=2 ){
+                  arr =[];
+                  obj ={};
 
+                // $('.slick-list.draggable').animate({paddingTop: initialPadding},300,"linear",function () {
+                //
+                // });
+
+            }
 
            if(currentSlide < flagSlider ){
-               if(arr[currentSlide]){
-                   number = arr[arr.length-1];
+               if(obj[currentSlide]){
+                   number = obj[arr.length-1];
                    $('.slick-list').css({'padding-top':number+'px'});
                     return;
                }
@@ -105,10 +114,20 @@ $(document).ready(function() {
                arr.pop();
                flagSlider = arr[arr.length-1];
                if(jQuery.isEmptyObject(obj)=== true){
-                   $('.slick-list').css({'padding-top':'140px'});
+                   // $('.slick-list').css({'padding-top':'140px'});
+
+
+                   $('.slick-list.draggable').animate({paddingTop: initialPadding},300,"linear",function () {
+
+                   });
+
                } else{
                     number = obj[flagSlider];
-                   $('.slick-list').css({'padding-top':number+'px'});
+                   // $('.slick-list').css({'padding-top':number+'px'});
+
+                   $('.slick-list.draggable').animate({paddingTop: number+'px'},300,"linear",function () {
+
+                   });
                }
 
            }
@@ -118,23 +137,32 @@ $(document).ready(function() {
 
             if(currentSlide  === flagSlider){
                 newPadding = obj[flagSlider];
-                $('.slick-list').css({'padding-top':newPadding+'px'});
+                // $('.slick-list').css({'padding-top':newPadding+'px'});
+
+
+                $('.slick-list.draggable').animate({paddingTop: newPadding+'px'},300,"linear",function () {
+
+                });
 
             } else {
 
-                var padding =  maxNumber - slick.$slides[currentSlide].clientHeight;
-                if( padding > 0){
+                var padding =  maxNumber -  slick.$slides[currentSlide].clientHeight;
+                if( padding > 1){
 
-                    newPadding  =   padding+140;
+                    newPadding  =   padding + parseInt(initialPadding, 10) ;
 
                     if(jQuery.isEmptyObject(arr)=== true){
-                        obj[currentSlide]=newPadding;
+                        obj[currentSlide] = newPadding;
                     } else{
                         newPadding = obj[flagSlider]+ padding;
-                        obj[currentSlide] =newPadding;
+                        obj[currentSlide] = newPadding;
                     }
 
-                    $('.slick-list').css({'padding-top':newPadding+'px'});
+                    // $('.slick-list').css({'padding-top':newPadding+'px'});
+
+                    $('.slick-list.draggable').animate({paddingTop: newPadding+'px'},300,"linear",function () {
+
+                    });
 
                     flagSlider = currentSlide;
 

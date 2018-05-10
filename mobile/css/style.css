@@ -16,28 +16,35 @@ html, body {
          padding-bottom: 70px;
          position: relative;
          min-height: 100%;
+         background: #d3d8d6;
     }
     .footer{
         position: absolute;
         left: 0;
         bottom: 0;
         height: 70px;
-        background: aliceblue;
         width: 100%;
+        background: #313135;
     }
 
     .header{
         height: 70px;
-        background: black;
+        background: #313135;
     }
 
     .text{
-        height: 249px;
-        background: black;
+        height: auto;
+        color: black;
+        background: #d3d8d6;
+        padding-left: 30px;
+        padding-top: 15px;
+        padding-right: 30px;
+        text-align: center;
+        font-size: 18px;
     }
     .logo{
        height: 70px;
-       background: aquamarine;
+       background: #d3d8d6;
     }
     .slider{
         height: 515px;
@@ -61,6 +68,21 @@ html, body {
     /*.slick-list{*/
         /*position: unset !important;*/
     /*}*/
+}
+@media all and (min-width: 500px) and (max-width: 768px) {
+    .slider .center .slick-list{
+        padding-top: 70px;
+    }
+}
 
+@media all and (min-width: 500px) and (max-width: 768px) {
+    .slider .center .slick-list{
+        padding-top: 70px;
+    }
+}
 
+@media all and (min-width: 500px) and (max-width: 768px) {
+    .slider .center .slick-list{
+        padding-top: 20px;
+    }
 }
