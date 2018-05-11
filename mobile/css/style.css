@@ -10,6 +10,29 @@ html, body {
     box-sizing: border-box;
 }
 @media all and (max-width: 768px) {
+
+    .slick-slide{
+
+        /*filter: blur(5px);*/
+        /*transition: all 1s ease-in-out;*/
+    }
+    .slick-slide.slick-active{
+        /*animation: blur 2s;*/
+        transform: translateZ(90px);
+        /*transition: all 1s ease-in-out;*/
+    }
+    .slick-slide.slick-active:hover{
+        animation: blur 2s;
+    }
+
+
+
+    @-webkit-keyframes blur {
+        0% { filter: blur(5px);}
+        50% { filter: blur(3px);}
+        100% { filter: blur(1px);}
+}
+
     .main-content{
          display: flex;
          flex-direction: column;

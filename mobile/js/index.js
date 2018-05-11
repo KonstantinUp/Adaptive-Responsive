@@ -27,10 +27,10 @@ $(document).ready(function() {
 
     $('img').each(function (index) {
         if(!maxNumber){
-            maxNumber =   + $(this).height();
+            maxNumber = $(this).height();
         }
         if($(this).height() > maxNumber){
-            maxNumber =   $(this).height();
+            maxNumber = $(this).height();
         }
     });
 
@@ -43,7 +43,7 @@ $(document).ready(function() {
     //     }
     // });
 
-    var newPadding;
+    var newPadding =0;
     var prev;
     var flagSlider;
     var obj ={};
@@ -68,6 +68,51 @@ $(document).ready(function() {
         //  }
 
         // $('.slick-list.draggable').animate({ scrollTop: slick.$slides[nextSlide].clientHeight+15 },1000);
+
+          if(currentSlide === 0 &&  nextSlide >=2){
+              arr =[];
+              obj ={};
+
+            var arrSliders = $("div[data-slick-index]:not(.slick-cloned)");
+
+            arrSliders.each(function () {
+                if(!maxNumber){
+                    maxNumber = $(this).height();
+                }
+                if($(this).height() > maxNumber){
+                    maxNumber = $(this).height();
+                }
+            });
+
+            arrSliders.each(function () {
+
+                var sliderNumber = $(this).attr("data-slick-index");
+
+                var padding = maxNumber - $(this).height();
+
+                if(padding > 1){
+
+
+
+                    newPadding = padding + parseInt(initialPadding, 10);
+
+                    if(jQuery.isEmptyObject(arr)=== true){
+
+                        obj[sliderNumber] = newPadding;
+                    } else{
+                        newPadding = obj[flagSlider]+ padding;
+                        obj[sliderNumber] = newPadding;
+                    }
+
+                    flagSlider = sliderNumber;
+                    arr.push(flagSlider);
+                }
+            });
+
+
+
+          }
+
     });
 
 
@@ -96,18 +141,32 @@ $(document).ready(function() {
             if(currentSlide === 0 && arr.length >=2 ){
                   arr =[];
                   obj ={};
+                  newPadding =0;
 
-                // $('.slick-list.draggable').animate({paddingTop: initialPadding},300,"linear",function () {
-                //
-                // });
+                var idTimer = setTimeout((function() {
+                    $('.slick-list.draggable').animate({paddingTop: initialPadding},1000,"linear", function () {
+                        clearTimeout(idTimer);
+                    });
+                }), 1000);
+
+                return;
 
             }
 
            if(currentSlide < flagSlider ){
                if(obj[currentSlide]){
-                   number = obj[arr.length-1];
-                   $('.slick-list').css({'padding-top':number+'px'});
-                    return;
+                   arr.pop();
+                   delete obj[flagSlider];
+
+                   flagSlider = currentSlide;
+                   number = obj[currentSlide];
+                   // $('.slick-list').css({'padding-top':number+'px'});
+
+                   $('.slick-list.draggable').animate({paddingTop: number},300,"linear",function () {
+
+                   });
+
+                      return;
                }
                // arr.pop();
                delete obj[flagSlider ];
@@ -135,7 +194,7 @@ $(document).ready(function() {
                     // newPadding = undefined;
 
 
-            if(currentSlide  === flagSlider){
+            if(currentSlide  == flagSlider){
                 newPadding = obj[flagSlider];
                 // $('.slick-list').css({'padding-top':newPadding+'px'});
 
@@ -147,9 +206,21 @@ $(document).ready(function() {
             } else {
 
                 var padding =  maxNumber -  slick.$slides[currentSlide].clientHeight;
+                if(padding < 2 && newPadding !=0){
+
+                    // $('.slick-list.draggable').animate({paddingTop: newPadding+'px'},300,"linear",function () {
+                    //
+                    // });
+
+                      var idTimer = setTimeout((function() {
+                          $('.slick-list.draggable').animate({paddingTop: newPadding+'px'},1000,"linear", function () {
+                              clearTimeout(idTimer);
+                        });
+                    }), 1000);
+                }
                 if( padding > 1){
 
-                    newPadding  =   padding + parseInt(initialPadding, 10) ;
+                    newPadding  =   padding + parseInt(initialPadding, 10);
 
                     if(jQuery.isEmptyObject(arr)=== true){
                         obj[currentSlide] = newPadding;
@@ -167,6 +238,8 @@ $(document).ready(function() {
                     flagSlider = currentSlide;
 
                     arr.push(flagSlider);
+
+                    newPadding = 0;
 
                 }
 
